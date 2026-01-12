@@ -1,0 +1,81 @@
+DIGEST 5b7bf0fa3e27014406d1988d0068cf49
+FCompilation
+R63:68 Axioms <> <> lib
+ind 160:163 <> Expr
+constr 179:181 <> Num
+constr 197:200 <> Plus
+constr 221:225 <> Times
+R188:190 Corelib.Init.Datatypes <> nat ind
+binder 184:184 <> n:3
+R211:214 Compilation <> Expr:1 ind
+binder 203:204 <> e1:4
+binder 206:207 <> e2:5
+R236:239 Compilation <> Expr:1 ind
+binder 228:229 <> e1:6
+binder 231:232 <> e2:7
+scheme 160:163 <> Expr_rect
+scheme 160:163 <> Expr_ind
+scheme 160:163 <> Expr_rec
+scheme 160:163 <> Expr_sind
+def 279:282 <> eval
+R289:292 Compilation <> Expr ind
+binder 285:285 <> e:8
+R297:299 Corelib.Init.Datatypes <> nat ind
+R312:312 Compilation <> e:8 var
+R323:325 Compilation <> Num constr
+R338:341 Compilation <> Plus constr
+R359:361 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R352:355 Compilation <> eval:9 def
+R362:365 Compilation <> eval:9 def
+R374:378 Compilation <> Times constr
+R396:398 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R389:392 Compilation <> eval:9 def
+R399:402 Compilation <> eval:9 def
+ind 456:465 <> BytecodeOp
+constr 481:484 <> PUSH
+constr 500:502 <> ADD
+constr 508:510 <> MUL
+R491:493 Corelib.Init.Datatypes <> nat ind
+binder 487:487 <> n:13
+scheme 456:465 <> BytecodeOp_rect
+scheme 456:465 <> BytecodeOp_ind
+scheme 456:465 <> BytecodeOp_rec
+scheme 456:465 <> BytecodeOp_sind
+def 567:581 <> BytecodeProgram
+R593:596 Corelib.Init.Datatypes <> list ind
+R598:607 Compilation <> BytecodeOp ind
+def 635:646 <> compile_expr
+R653:656 Compilation <> Expr ind
+binder 649:649 <> e:14
+R661:675 Compilation <> BytecodeProgram def
+R688:688 Compilation <> e:14 var
+R699:701 Compilation <> Num constr
+R714:717 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R708:711 Compilation <> PUSH constr
+R718:720 Corelib.Init.Datatypes <> nil constr
+R726:729 Compilation <> Plus constr
+R755:758 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R740:751 Compilation <> compile_expr:15 def
+R774:778 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R789:789 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R759:770 Compilation <> compile_expr:15 def
+R782:785 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R779:781 Compilation <> ADD constr
+R786:788 Corelib.Init.Datatypes <> nil constr
+R795:799 Compilation <> Times constr
+R825:828 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R810:821 Compilation <> compile_expr:15 def
+R844:848 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R859:859 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R829:840 Compilation <> compile_expr:15 def
+R852:855 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R849:851 Compilation <> MUL constr
+R856:858 Corelib.Init.Datatypes <> nil constr
+prf 907:932 <> A1_Determinism_Compilation
+R948:951 Compilation <> Expr ind
+binder 944:944 <> e:17
+R971:973 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R957:968 Compilation <> compile_expr def
+R970:970 Compilation <> e:17 var
+R974:985 Compilation <> compile_expr def
+R987:987 Compilation <> e:17 var

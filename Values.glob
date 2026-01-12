@@ -1,0 +1,97 @@
+DIGEST 0dbaed5957c13403cdc9cd06972738ed
+FValues
+ind 114:118 <> Value
+constr 134:137 <> Null
+constr 143:145 <> Int
+constr 161:165 <> Bytes
+constr 186:190 <> Array
+constr 214:219 <> Object
+R152:154 Corelib.Init.Datatypes <> nat ind
+binder 148:148 <> i:3
+R172:175 Corelib.Init.Datatypes <> list ind
+R177:179 Corelib.Init.Datatypes <> nat ind
+binder 168:168 <> b:4
+R198:201 Corelib.Init.Datatypes <> list ind
+R203:207 Values <> Value:1 ind
+binder 193:194 <> vs:5
+R231:234 Corelib.Init.Datatypes <> list ind
+R240:242 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R237:239 Corelib.Init.Datatypes <> nat ind
+R243:247 Values <> Value:1 ind
+binder 222:227 <> fields:6
+scheme 114:118 <> Value_rect
+scheme 114:118 <> Value_ind
+scheme 114:118 <> Value_rec
+scheme 114:118 <> Value_sind
+def 284:292 <> serialize
+R299:303 Values <> Value ind
+binder 295:295 <> v:7
+R308:311 Corelib.Init.Datatypes <> list ind
+R313:315 Corelib.Init.Datatypes <> nat ind
+R328:328 Values <> v:7 var
+R339:342 Values <> Null constr
+R349:352 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R353:355 Corelib.Init.Datatypes <> nil constr
+R362:364 Values <> Int constr
+R373:376 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R377:379 Corelib.Init.Datatypes <> nil constr
+R386:390 Values <> Bytes constr
+R399:402 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R403:405 Corelib.Init.Datatypes <> nil constr
+R412:416 Values <> Array constr
+R426:429 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R430:432 Corelib.Init.Datatypes <> nil constr
+R439:444 Values <> Object constr
+R458:461 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R462:464 Corelib.Init.Datatypes <> nil constr
+def 508:518 <> deserialize
+R529:532 Corelib.Init.Datatypes <> list ind
+R534:536 Corelib.Init.Datatypes <> nat ind
+binder 521:525 <> bytes:9
+R541:545 Values <> Value ind
+R558:562 Values <> bytes:9 var
+R573:575 Corelib.Init.Datatypes <> nil constr
+R580:583 Values <> Null constr
+R590:593 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R599:602 Values <> Null constr
+R609:612 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R618:620 Values <> Int constr
+R629:632 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R638:642 Values <> Bytes constr
+R644:646 Corelib.Init.Datatypes <> nil constr
+R653:656 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R662:666 Values <> Array constr
+R668:670 Corelib.Init.Datatypes <> nil constr
+R681:686 Values <> Object constr
+R688:690 Corelib.Init.Datatypes <> nil constr
+ax 769:784 <> A4_Serialization
+R800:804 Values <> Value ind
+binder 796:796 <> v:11
+R835:837 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R810:820 Values <> deserialize def
+R823:831 Values <> serialize def
+R833:833 Values <> v:11 var
+R838:838 Values <> v:11 var
+def 876:887 <> int_to_value
+R894:896 Corelib.Init.Datatypes <> nat ind
+binder 890:890 <> i:14
+R901:905 Values <> Value ind
+R910:912 Values <> Int constr
+R914:914 Values <> i:14 var
+def 926:933 <> int_test
+R952:954 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R937:948 Values <> int_to_value def
+R955:957 Values <> Int constr
+def 1020:1026 <> is_null
+R1033:1037 Values <> Value ind
+binder 1029:1029 <> v:15
+R1042:1045 Corelib.Init.Datatypes <> bool ind
+R1058:1058 Values <> v:15 var
+R1069:1072 Values <> Null constr
+R1077:1080 Corelib.Init.Datatypes <> true constr
+R1091:1095 Corelib.Init.Datatypes <> false constr
+def 1113:1121 <> null_test
+R1137:1139 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1125:1131 Values <> is_null def
+R1133:1136 Values <> Null constr
+R1140:1143 Corelib.Init.Datatypes <> true constr
